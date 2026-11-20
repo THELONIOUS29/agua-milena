@@ -58,7 +58,7 @@ Future<void> _inicializarFirebaseYNotificaciones() async {
     if (kIsWeb) {
       await Firebase.initializeApp(
         options: const FirebaseOptions(
-          apiKey: 'CONFIGURAR_LOCALMENTE',
+          apiKey: String.fromEnvironment('FIREBASE_API_KEY'),
           authDomain: 'agua-milena.firebaseapp.com',
           projectId: 'agua-milena',
           storageBucket: 'agua-milena.firebasestorage.app',

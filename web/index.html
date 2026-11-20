@@ -25,18 +25,8 @@
   <!-- Firebase SDK (compat mode for Flutter) -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-messaging-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "CONFIGURAR_LOCALMENTE",
-      authDomain: "agua-milena.firebaseapp.com",
-      projectId: "agua-milena",
-      storageBucket: "agua-milena.firebasestorage.app",
-      messagingSenderId: "504410173979",
-      appId: "1:504410173979:web:d826d0dd9aa1cf68e2febe",
-      measurementId: "G-P31SKZG7JD"
-    };
-    firebase.initializeApp(firebaseConfig);
-  </script>
+  <script src="firebase-config.local.js"></script>
+  <script>if (window.firebaseConfig && window.firebaseConfig.apiKey) { firebase.initializeApp(window.firebaseConfig); }</script>
 
   <style>
     body { background-color: #0a1929; margin: 0; }

@@ -1,21 +1,12 @@
-// Configuracion de Supabase cargada por variables de compilacion.
-
+// Los valores se suministran en un archivo local excluido de Git.
 class SupabaseConfig {
   SupabaseConfig._();
-
-  static const String _urlPorDefecto =
-      'https://PROYECTO.supabase.co';
-  static const String _anonKeyPorDefecto =
-      'CONFIGURAR_LOCALMENTE';
-
-  static const String url = String.fromEnvironment(
-    'SUPABASE_URL',
-    defaultValue: _urlPorDefecto,
-  );
-  static const String anonKey = String.fromEnvironment(
-    'SUPABASE_ANON_KEY',
-    defaultValue: _anonKeyPorDefecto,
-  );
-
-  static bool get isConfigured => url.isNotEmpty && anonKey.isNotEmpty;
+  static const String url = String.fromEnvironment('SUPABASE_URL');
+  static const String anonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
+  static bool get isConfigured =>
+      url.startsWith('https://') &&
+      !url.contains('PROYECTO') &&
+      anonKey.isNotEmpty &&
+      !anonKey.startsWith('sb_secret_') &&
+      !anonKey.startsWith('CONFIGURAR_');
 }

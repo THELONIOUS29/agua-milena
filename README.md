@@ -4,7 +4,7 @@ Aplicación Flutter y Supabase para ventas, inventario, rutas y gestión de una 
 
 ## Sobre esta copia
 
-Instantánea preparada el 20 de noviembre de 2026 para organizar un portafolio profesional. Repositorio privado. No incluye el historial Git original.
+Instantánea preparada el 20 de noviembre de 2026 para organizar un portafolio profesional. Copia para portafolio. No incluye el historial Git original.
 
 Se omitieron configuraciones locales, credenciales, datos operativos, instalaciones y archivos generados. Los valores `CONFIGURAR_LOCALMENTE`, `CONFIGURAR_TOKEN_LOCALMENTE` y `CONFIGURAR_SECRETO_LOCALMENTE` deben reemplazarse mediante configuración local antes de ejecutar. En scripts SQL se omitieron bloques de datos `INSERT` y `COPY`; en notebooks se borraron salidas guardadas.
 
@@ -88,3 +88,10 @@ docs/PRODUCCION_1_0_2.md
 ## Licencia
 
 Proyecto académico — Universidad. Todos los derechos reservados.
+
+
+## Publicación y configuración
+
+Código compartido para portafolio profesional. No incluye credenciales del negocio. Preparación de seguridad del 20 de noviembre de 2026; no equivale a una validación de producción.
+
+Consultar `SECURITY.md`. Configurar con archivos locales excluidos de Git; no hay conexión predeterminada al negocio.
