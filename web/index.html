@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Aplicación de gestión de ventas e inventario - Distribuidora Agua Milena">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- PWA / iOS meta tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Agua Milena">
+  <meta name="theme-color" content="#0D47A1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Agua Milena</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK (compat mode for Flutter) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-messaging-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "CONFIGURAR_LOCALMENTE",
+      authDomain: "agua-milena.firebaseapp.com",
+      projectId: "agua-milena",
+      storageBucket: "agua-milena.firebasestorage.app",
+      messagingSenderId: "504410173979",
+      appId: "1:504410173979:web:d826d0dd9aa1cf68e2febe",
+      measurementId: "G-P31SKZG7JD"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <style>
+    body { background-color: #0a1929; margin: 0; }
+  </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

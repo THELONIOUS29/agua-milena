@@ -1,0 +1,81 @@
+name: agua_milena_app
+description: "Aplicación móvil de gestión de ventas e inventario - Distribuidora Agua Milena"
+publish_to: '22.05.2026'
+version: 1.0.5+4013
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Backend
+  supabase_flutter: ^2.8.4
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # UI & Gráficos
+  fl_chart: ^0.71.0
+  google_fonts: ^6.2.1
+
+  # Utilidades
+  intl: ^0.20.2
+  uuid: ^4.5.1
+  logger: ^2.5.0
+  shared_preferences: ^2.3.5
+
+  # Imágenes
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+
+  # Notificaciones (Sprint 5)
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.1
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+
+  # Machine Learning (Sprint 5)
+  tflite_flutter: ^0.12.1
+  local_auth: ^3.0.1
+  flutter_secure_storage: ^10.2.0
+  crypto: ^3.0.7
+  pointycastle: ^4.0.0
+  device_info_plus: ^11.0.0
+  package_info_plus: ^8.0.0
+  pdf: ^3.12.0
+  printing: ^5.14.3
+  share_plus: ^12.0.2
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  http: ^1.6.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#0A1929"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/modelos/
+    - assets/icon/
